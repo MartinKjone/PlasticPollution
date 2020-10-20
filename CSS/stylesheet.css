@@ -1,0 +1,96 @@
+h1 {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 250%;
+}
+
+h2 {
+    background-color: darkblue;
+    color: whitesmoke;
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: -22px;
+}
+
+/* nav locations */
+div {
+}
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color: lightgray;
+    top: -10px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: black;
+    padding: 5px 10px 0px 10px;
+    text-align: center;
+    text-decoration: overline;
+    font-size: 30px;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: lightblue;
+}
+
+p {
+    font-size: 150%;
+}
+
+footer {
+    text-align: center;
+    font-size: 150%;
+    border-width: 5px;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*  Flexbox   */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.flex-left {
+    background-color: whitesmoke;
+    flex: 100%;
+    padding: 20px 30px;
+    margin: 15px;
+}
+
+.flex-right {
+    background-color: rgb(235, 180, 248);
+    flex: 100%;
+    padding: 20px 30px;
+    margin: 15px;
+}
+
+.flex-middle {
+    background-color: lightskyblue;
+    flex: 100%;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+    /*
+    Font size, line height etc.
+    */
