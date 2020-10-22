@@ -43,13 +43,14 @@ div {
 
 p {
     font-size: 150%;
+    line-height: 1.6;
 }
 
 footer {
     text-align: center;
     font-size: 150%;
     border-width: 5px;
-    background-color: whitesmoke;
+    background-color: lightgray;
     width: 100%;
 }
 
@@ -65,32 +66,32 @@ footer {
 }
 
 .flex-left {
-    background-color: whitesmoke;
+    background-color: rgb(226, 226, 118);
     flex: 100%;
     padding: 20px 30px;
     margin: 15px;
 }
 
 .flex-right {
-    background-color: rgb(235, 180, 248);
+    background-color: rgba(0, 125, 187,0.5);
     flex: 100%;
     padding: 20px 30px;
     margin: 15px;
 }
 
+/* Make this narrower */
 .flex-middle {
-    background-color: lightskyblue;
+    background-color:rgba(0, 125, 187,0.5);
     flex: 100%;
     padding: 20px 30px;
     width: 100%;
 }
 
+/* Flex-direction on small screen */
 @media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
     }
   }
 
-    /*
-    Font size, line height etc.
-    */
+
