@@ -1,5 +1,5 @@
 h1 {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 5px;
     text-align: center;
     font-size: 250%;
@@ -88,7 +88,7 @@ footer {
 }
 
 /* Flex-direction on small screen */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .flex-container {
       flex-direction: column;
     }
