@@ -1,6 +1,18 @@
+/* Global */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Typography */
+
 h1 {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    padding-top: 1rem;
+    margin-bottom: 0;
     text-align: center;
     font-size: 250%;
 }
@@ -9,41 +21,80 @@ h2 {
     background-color: darkblue;
     color: whitesmoke;
     width: 100%;
-    padding: 10px 30px;
-    margin-bottom: -22px;
-}
-
-/* nav locations */
-div {
-}
-
-/* navbar */
-.navbar {
-    overflow: hidden;
-    background-color: lightgray;
-    top: -10px;
-    position: fixed;
-    width: 100%;
-}
-
-.navbar a {
-    display: block;
-    float: left;
-    color: black;
-    padding: 5px 10px 0px 10px;
+    padding: 10px;
+    margin-top: 0;
     text-align: center;
-    text-decoration: overline;
-    font-size: 30px;
 }
 
-.navbar a:hover {
-    background-color: black;
-    color: lightblue;
+h3 {
+    font-size: 200%;
+    text-decoration: underline;
+    margin-top: 0.5rem;
 }
 
 p {
     font-size: 150%;
     line-height: 1.6;
+}
+
+/* Layout */
+
+/* navbar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: black;
+    padding: 10px 20px 0px 10px;
+    text-align: center;
+    text-decoration: overline;
+    font-size: 30px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: lightblue;
+}
+
+/*  Flexbox   */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-left {
+    background-color: rgb(226, 226, 118);
+    padding: 20px 30px;
+    margin: 15px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.flex-right {
+    background-color: rgba(0, 125, 187,0.5);
+    padding: 20px 30px;
+    margin: 15px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+/* Make this narrower */
+.flex-middle {
+    background-color:rgba(0, 125, 187,0.5);
+    padding: 30px;
+    margin: 15px;
 }
 
 footer {
@@ -52,39 +103,8 @@ footer {
     border-width: 5px;
     background-color: lightgray;
     width: 100%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/*  Flexbox   */
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.flex-left {
-    background-color: rgb(226, 226, 118);
-    flex: 100%;
-    padding: 20px 30px;
-    margin: 15px;
-}
-
-.flex-right {
-    background-color: rgba(0, 125, 187,0.5);
-    flex: 100%;
-    padding: 20px 30px;
-    margin: 15px;
-}
-
-/* Make this narrower */
-.flex-middle {
-    background-color:rgba(0, 125, 187,0.5);
-    flex: 100%;
-    padding: 20px 30px;
-    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 /* Flex-direction on small screen */
