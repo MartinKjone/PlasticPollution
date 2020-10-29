@@ -6,6 +6,11 @@
 
 body {
     margin: 0;
+    text-align: center;
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 /* Typography */
@@ -13,28 +18,32 @@ body {
 h1 {
     padding-top: 1rem;
     margin-bottom: 0;
-    text-align: center;
-    font-size: 250%;
+    font-size: 3rem;
 }
 
 h2 {
-    background-color: darkblue;
+    background-color: #424223;
     color: whitesmoke;
+    font-size: 200%;
     width: 100%;
     padding: 10px;
     margin-top: 0;
-    text-align: center;
 }
 
 h3 {
-    font-size: 200%;
-    text-decoration: underline;
+    font-size: 180%;
     margin-top: 0.5rem;
+
 }
 
 p {
     font-size: 150%;
     line-height: 1.6;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
 }
 
 /* Layout */
@@ -72,29 +81,29 @@ nav a:hover {
 .flex-container {
     display: flex;
     flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .flex-left {
-    background-color: rgb(226, 226, 118);
     padding: 20px 30px;
-    margin: 15px;
     flex-basis: 50%;
-    text-align: center;
 }
 
 .flex-right {
-    background-color: rgba(0, 125, 187,0.5);
     padding: 20px 30px;
-    margin: 15px;
     flex-basis: 50%;
-    text-align: center;
 }
 
 .flex-middle {
-    background-color:rgba(0, 125, 187,0.5);
-    padding: 30px;
+    padding: 30px 25%;
+}
+
+.flex-left, .flex-right, .flex-middle {
+    background-color: #e2e276;
     margin: 15px;
 }
+
 
 footer {
     text-align: center;
@@ -111,6 +120,14 @@ footer {
     .flex-container {
       flex-direction: column;
     }
+    .flex-middle {
+        padding: 30px;
+    }
   }
 
+/* Components */
 
+.centerimage {
+    width: 100%;
+    padding: 15px;
+}
